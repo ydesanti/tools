@@ -35,7 +35,7 @@ var span = document.getElementsByClassName("close")[0];
     }
 }*/
 
-var injectForm = fuction() {
+var injectForm = function() {
 	var doc = document.getElementById("content-anchor");
 	doc.replaceWith(divModal);
 }();
