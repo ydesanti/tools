@@ -35,10 +35,10 @@ var span = document.getElementsByClassName("close")[0];
     }
 }*/
 
-fuction replaceCode() {
+var injectForm = fuction replaceCode() {
 	var doc = document.getElementById("content-anchor");
 	doc.replaceWith(divModal);
-}
+}();
 
 function urlUpdate() {
 	var url = document.URL;	
