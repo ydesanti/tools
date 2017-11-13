@@ -20,10 +20,10 @@ fragment.appendChild(divModal);
 var modal = document.getElementById('myModal');
 
 // Get the <span> element that closes the modal
-var span = document.querySelector("#closebutton");
+var spanClose = document.querySelector("#closebutton");
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+spanClose.onclick = function() {
     modal.style.display = "none";
 }
 // When the user clicks anywhere outside of the modal, close it
@@ -35,7 +35,7 @@ window.onclick = function(event) {
 
 function urlUpdate() {
   var url = document.URL; 
-  var checks = document.querySelector("#getSelector");//document.forms[1];
+  var checks = document.querySelector("#getSelector");
     
   if(checks[0].checked){
     url += separador(url) + 'featest=1';
