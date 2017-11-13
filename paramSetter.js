@@ -54,7 +54,7 @@ function urlUpdate() {
   }
     
   window.locaation = url;
-  console(url);
+  console.log(url);
 }
 
 function separador(url) {
