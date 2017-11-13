@@ -58,7 +58,7 @@ function urlUpdate() {
     
   var isMobile = url.indexOf("m.");
   if ( isMobile > 0 ) {
-    url = url.replace("m.","");
+    url = url.replace("m.","www.");
   }
     
   window.location.href = url;
