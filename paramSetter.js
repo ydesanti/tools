@@ -23,9 +23,15 @@ var modal = document.getElementById('myModal');
 var spanClose = document.querySelector("#closebutton");
 
 // When the user clicks on <span> (x), close the modal
-setTimeout( spanClose.onclick = function() {
-    modal.style.display = "none";
-}, 2000);
+setTimeout(spanSetter(), 2000);
+
+function spanSetter()
+{
+  spanClose.onclick = function() {
+    window.location.reload();
+  }
+}
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
