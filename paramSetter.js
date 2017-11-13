@@ -10,7 +10,7 @@ head.appendChild(link);
 
 var divModal = document.createElement("div");
 var fragment = document.createDocumentFragment();
-divModal.innerHTML = '<div id="myModal" class="modal"><div class="modal-content"><span id="closebutton" class="close">&times;</span><p>Select the desired parameters to add</p>'+
+divModal.innerHTML = '<div id="myModal" class="modal"><div class="modal-content"><span onclick="spanClose()" class="close">&times;</span><p>Select the desired parameters to add</p>'+
                   '<form id="getSelector" action="/action_page.php"><input type="checkbox" value="fea">FEA<br><input type="checkbox" value="pla">PLA<br><input type="checkbox" value="stopmobi">StopMobi<br>'+
                   '<input type="checkbox" value="promocode">PromoCode <input type="text" id="pcd" size="50"><br><br><input type="button" onclick="urlUpdate()" value="Send order">'+
                   '</form></div></div>';
@@ -23,13 +23,9 @@ var modal = document.getElementById('myModal');
 var spanClose = document.querySelector("#closebutton");
 
 // When the user clicks on <span> (x), close the modal
-setTimeout(spanSetter(), 2000);
-
-function spanSetter()
+function spanClose()
 {
-  spanClose.onclick = function() {
     window.location.reload();
-  }
 }
 
 
