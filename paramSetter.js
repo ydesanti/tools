@@ -11,7 +11,7 @@ head.appendChild(link);
 var divModal = document.createElement("div");
 var fragment = document.createDocumentFragment();
 divModal.innerHTML = '<div id="myModal" class="modal"><div class="modal-content"><span onclick="window.location.reload();" class="close">&times;</span><p>Select the desired parameters to add</p>'+
-                  '<form id="getSelector" action="/action_page.php"><span>FEA</span><input type="checkbox" value="fea" id="fea"><label for="fea"></label><br><input type="checkbox" value="pla">PLA<br><input type="checkbox" value="stopmobi">StopMobi<br>'+
+                  '<form id="getSelector" action="/action_page.php"><div class="block"><span>FEA</span><input type="checkbox" value="fea" id="fea"><label for="fea"></label></div><br><input type="checkbox" value="pla">PLA<br><input type="checkbox" value="stopmobi">StopMobi<br>'+
                   '<input type="checkbox" value="promocode">PromoCode <input type="text" id="pcd" size="50"><br><br><input type="button" onclick="urlUpdate()" value="Send order">'+
                   '</form></div></div>';
 fragment.appendChild(divModal);
