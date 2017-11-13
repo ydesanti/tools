@@ -44,7 +44,7 @@ input{
   width:200px;
   position:relative;
   clear:both;
-  margin:0 0 25px;
+  margin:0 0 10px;
   float: left;
 }
 span{
@@ -52,22 +52,14 @@ span{
   font-family:'Roboto Condensed', sans-serif;
   font-weight:bold;
   letter-spacing:1px;
-  font-size:15px;
+  font-size:12px;
   float:right;
-  width:85px;
-  margin:16px 0 0;
-}
-.wrap{
-  width:200px;
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-  padding:30px 30px 5px;
+  width:165px;
+  margin:0px 0 0;
 }
 label{
-  width:100px;
-  height:50px;
+  width:30px;
+  height:12px;
   box-sizing:border-box;
   border:3px solid;
   float:left;
@@ -80,17 +72,17 @@ input[type=checkbox]:checked + label{
   background:#55e868;
 }
 input[type=checkbox]:checked + label:before{
-  left:50px;
+  left:11px;
 }
 label:before{
   transition:.3s ease;
   content:'';
-  width:40px;
-  height:40px;
+  width:12px;
+  height:12px;
   position:absolute;
   background:white;
-  left:2px;
-  top:2px;
+  left:0px;
+  top:-3px;
   box-sizing:border-box;
   border:3px solid;
   color:black;
