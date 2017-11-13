@@ -53,7 +53,7 @@ function urlUpdate() {
     url += separador(url) + 'pcd=' +checks[4].value;
   }
     
-  window.locaation = url;
+  window.location = url;
   console.log(url);
 }
 
