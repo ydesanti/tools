@@ -56,6 +56,11 @@ function urlUpdate() {
     url += separador(url) + 'pcd=' +checks[4].value;
   }
     
+  var isMobile = url.indexOf("m.");
+  if ( isMobile > 0 ) {
+    url = url.replace("m.","");
+  }
+    
   window.location.href = url;
   console.log(url);
 }
