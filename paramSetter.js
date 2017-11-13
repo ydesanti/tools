@@ -20,7 +20,7 @@ fragment.appendChild(divModal);
 var modal = document.getElementById('myModal');
 
 // Get the <span> element that closes the modal
-var spanClose = document.querySelector("#closebutton");
+var spanClose = document.getElementById("closebutton");
 
 // When the user clicks on <span> (x), close the modal
 spanClose.onclick = function() {
