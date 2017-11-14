@@ -15,25 +15,25 @@ divModal.innerHTML = '<div id="myModal" class="modal">'+
 '      <span onclick="window.location.reload();" class="close">&times;</span>'+
 '      <h4>Select the desired parameters to add</h4>'+
 '      <form id="getSelector" action="/action_page.php">'+
-'         <div class="block">'+
+'         <div class="block row">'+
 '           <span>FEA</span>'+
 '           <input type="checkbox" value="fea" id="fea">'+
 '           <label for="fea"></label>'+
 '          </div><br>'+
-'        <div class="block">'+
+'        <div class="block row">'+
 '           <span>PLA</span>'+
 '           <input type="checkbox" value="pla" id="pla">'+
 '           <label for="pla"></label>'+
 '        </div><br>'+
-'        <div class="block">'+
+'        <div class="block row">'+
 '           <span>StopMobi</span>'+
 '           <input type="checkbox" value="stopmobi"id="stopmobi">'+
 '           <label for="stopmobi"></label>'+
 '        </div><br>'+
-'        <div class="block">'+
+'        <div class="block row">'+
 '           <span>PromoCode</span>'+
 '           <input type="checkbox" value="promocode" id="promocode">'+
-'           <label for="promocode"></label><input type="text" id="pcd" size="20">'+
+'           <div class="row"><label for="promocode"></label><input type="text" id="pcd" maxlength="20"></div>'+
 '        </div><br>'+
 '        <input type="button" onclick="urlUpdate()" value="Update URL">'+
 '      </form>'+
