@@ -23,7 +23,7 @@ divModal.innerHTML = '<div id="myModal" class="modal">'+
 '        <div class="block">'+
 '           <span>PLA</span>'+
 '           <input type="checkbox" value="pla" id="pla">'+
-'           <label for="fea"></label>'+
+'           <label for="pla"></label>'+
 '        </div><br>'+
 '        <div class="block">'+
 '           <span>StopMobi</span>'+
