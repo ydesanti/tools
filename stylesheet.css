@@ -18,8 +18,8 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    height: 50%;
+    width: 60%;
+    height: 30%;
 }
 /* The Close Button */
 .close {
@@ -110,7 +110,7 @@ input[type=text]{
   position:absolute;
   background:white;
   width:100px;
-  height:15px;
-  top:-2px;
-  left:120px;
+  height:17px;
+  top:-1px;
+  left:130px;
 }
