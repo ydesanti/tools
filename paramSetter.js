@@ -33,9 +33,9 @@ divModal.innerHTML = '<div id="myModal" class="modal">'+
 '        <div class="block row">'+
 '           <span>PromoCode</span>'+
 '           <input type="checkbox" value="promocode" id="promocode">'+
-'           <div class="row"><label for="promocode"></label><input type="text" id="pcd" maxlength="20"></div>'+
+'           <label for="promocode"></label><input type="text" id="pcd" maxlength="20">'+
 '        </div><br>'+
-'        <input type="button" onclick="urlUpdate()" value="Update URL">'+
+'        <div class="row"><input type="button" onclick="urlUpdate()" value="Update URL"></div>'+
 '      </form>'+
 '   </div>'+
 '</div>';
