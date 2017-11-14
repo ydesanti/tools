@@ -13,7 +13,7 @@ var fragment = document.createDocumentFragment();
 divModal.innerHTML = '<div id="myModal" class="modal">'+
 '     <div class="modal-content">'+
 '      <span onclick="window.location.reload();" class="close">&times;</span>'+
-'      <h2>Select the desired parameters to add</h2>'+
+'      <h4>Select the desired parameters to add</h4>'+
 '      <form id="getSelector" action="/action_page.php">'+
 '         <div class="block">'+
 '           <span>FEA</span>'+
