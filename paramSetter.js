@@ -10,10 +10,35 @@ head.appendChild(link);
 
 var divModal = document.createElement("div");
 var fragment = document.createDocumentFragment();
-divModal.innerHTML = '<div id="myModal" class="modal"><div class="modal-content"><span onclick="window.location.reload();" class="close">&times;</span><p>Select the desired parameters to add</p>'+
-                  '<form id="getSelector" action="/action_page.php"><div class="block"><span>FEA</span><input type="checkbox" value="fea" id="fea"><label for="fea"></label></div><br><input type="checkbox" value="pla">PLA<br><input type="checkbox" value="stopmobi">StopMobi<br>'+
-                  '<input type="checkbox" value="promocode">PromoCode <input type="text" id="pcd" size="50"><br><br><input type="button" onclick="urlUpdate()" value="Send order">'+
-                  '</form></div></div>';
+divModal.innerHTML = '<div id="myModal" class="modal">'+
+'     <div class="modal-content">'+
+'      <span onclick="window.location.reload();" class="close">&times;</span>'+
+'      <h2>Select the desired parameters to add</h2>'+
+'      <form id="getSelector" action="/action_page.php">'+
+'         <div class="block">'+
+'           <span>FEA</span>'+
+'           <input type="checkbox" value="fea" id="fea">'+
+'           <label for="fea"></label>'+
+'          </div><br>'+
+'        <div class="block">'+
+'           <span>PLA</span>'+
+'           <input type="checkbox" value="pla" id="pla">'+
+'           <label for="fea"></label>'+
+'        </div><br>'+
+'        <div class="block">'+
+'           <span>StopMobi</span>'+
+'           <input type="checkbox" value="stopmobi"id="stopmobi">'+
+'           <label for="stopmobi"></label>'+
+'        </div><br>'+
+'        <div class="block">'+
+'           <span>PromoCode</span>'+
+'           <input type="checkbox" value="promocode" id="promocode">'+
+'           <label for="promocode"></label><input type="text" id="pcd" size="20">'+
+'        </div><br>'+
+'        <input type="button" onclick="urlUpdate()" value="Update URL">'+
+'      </form>'+
+'   </div>'+
+'</div>';
 fragment.appendChild(divModal);
 
 // Get the modal
