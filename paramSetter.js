@@ -70,7 +70,7 @@ function urlUpdate() {
   } 
     
   if (checks[1].checked){
-    url += separador(url) + 'PLA1=0';
+    url += separador(url) + 'pla1=0';
   }
     
   if (checks[2].checked){
